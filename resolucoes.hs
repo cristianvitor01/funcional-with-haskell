@@ -59,6 +59,14 @@ padovan n
   | n <= 2 = 1
   | otherwise = padovan (n -2) + padovan (n -3)
 
+{--
+  primos gêmeos são dois números primos cuja diferença é igual a
+  dois.
+a. Receba dois números e retorne um valor booleano informando se eles constituem um par de números primos gêmeos. 
+b. Receba um determinado número p e retorne um valor booleano informando se ele pertence a algum par de número primo gêmeo. 
+c. Contabilize quantos pares de primos gêmeos existem abaixo de um número n. 
+d. Calcule a soma de todos os primos gêmeos que aparecem entre 0 e n. 
+--}
 
 parGemeo::Int->Int->Bool
 parGemeo x y
@@ -104,6 +112,14 @@ par n
 impar::Int->Bool
 impar n = not (par n)
 -- impar n = ((mod n 2)/=0)
+
+
+{--
+Dado um número inteiro qualquer, escreva uma função que calcule:
+a) A soma dos algarismos pares
+b) Conte quantos algarismos ímpares
+c) Multiplique os algarismos primos
+--}
 
 somaAlgPar::Int->Int
 somaAlgPar n
